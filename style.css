@@ -1,0 +1,9 @@
+.nav-pills .nav-link {
+  background-color: inherit; /* Replace with your desired color */
+  color: white; /* Replace with the text color you want */
+}
+
+.nav-pills .nav-link.active {
+  background-color: teal;
+  color: white;
+}
