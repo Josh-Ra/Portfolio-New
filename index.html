@@ -15,10 +15,11 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body class="bg-dark">
-    <nav class="d-flex justify-content-end mt-4" style="font-size: 18.5px">
+  <body>
+    <nav class="d-flex justify-content-center mt-4" style="font-size: 22.5px">
       <div class="nav nav-pills" id="nav-tab" role="tablist">
         <button
           class="nav-link active"
@@ -87,13 +88,10 @@
               alt="profile-image"
             />
           </div>
-          <div class="container-fluid mt-5">
-            <div
-              class="about"
-              style="padding: 20px; background-color: teal; border-radius: 10px"
-            >
-              <h1>About me</h1>
-              <p style="color: white; letter-spacing: 2px; font-size: 20px">
+          <div class="container-fluid mt-5 slide-in-left">
+            <div class="about">
+              <h1 class="about-me-header">About me</h1>
+              <p class="about-me-content">
                 Greetings! I'm Joshua Wadley a software developer from the city
                 of Oxford, Mississippi. My journey into the world of technology
                 is driven by a passion for facing challenges and learning. I
@@ -111,48 +109,61 @@
         aria-labelledby="nav-skills-tab"
         tabindex="0"
       >
-        <div
-          class="container my-5"
-          style="padding: 20px; color: white; font-size: 30px"
-        >
-          <div class="text-center mb-5">
-            <h2 class="font-weight-bold">My Expertise</h2>
+        <div class="container my-5" style="padding: 20px; font-size: 30px">
+          <div class="text-center mb-4">
+            <h2 class="myskillheader slide-in-up">My Expertise</h2>
           </div>
           <div class="row justify-content-center">
-            <div class="col-md-6 col-lg-4 mb-4">
-              <div class="skill-card border rounded shadow-sm p-4 h-100">
-                <h4 class="text-center">Frontend Development</h4>
-                <ul class="list-unstyled mt-4 text-center">
+            <div class="col-md-6 col-lg-4 mb-4 slide-in-down">
+              <div class="skill-card border-dark rounded p-4 h-100">
+                <h4 class="skill-header text-center">Languages</h4>
+                <ul
+                  class="list-unstyled mt-4 text-center"
+                  style="letter-spacing: 2px"
+                >
                   <li class="mb-2">
                     <span class="skill-name">HTML & CSS</span>
                   </li>
                   <li class="mb-2">
-                    <span class="skill-name">Javascript: React</span>
+                    <span class="skill-name">Javascript</span>
+                  </li>
+                  <li class="mb-2">
+                    <span class="skill-name">Python</span>
+                  </li>
+                  <li class="mb-2">
+                    <span class="skill-name">Java</span>
+                  </li>
+                  <li class="mb-2">
+                    <span class="skill-name">SQL</span>
                   </li>
                 </ul>
                 <div class="text-center mt-4">
-                  <a href="#" class="btn btn-primary">Learn More</a>
+                  <a href="#" class="btn btn-secondary">Learn More</a>
                 </div>
               </div>
             </div>
-            <div class="col-md-6 col-lg-4 mb-4">
-              <div class="skill-card border rounded shadow-md p-4 h-100">
-                <div class="text-center">
-                  <h4 class="text-center">Backend Development</h4>
-                </div>
-                <ul class="list-unstyled mt-4 text-center">
+            <div class="col-md-6 col-lg-4 mb-4 slide-in-down-other">
+              <div class="skill-card border-dark rounded p-4 h-100">
+                <h4 class="skill-header text-center">Frameworks</h4>
+                <ul
+                  class="list-unstyled mt-4 text-center"
+                  style="letter-spacing: 2px"
+                >
                   <li class="mb-2">
-                    <span class="skill-name">Python & Django</span>
+                    <span class="skill-name">Django</span>
                   </li>
                   <li class="mb-2">
-                    <span class="skill-name">Java & Spring</span>
+                    <span class="skill-name">Spring</span>
                   </li>
                   <li class="mb-2">
-                    <span class="skill-name">Databases: SQL</span>
+                    <span class="skill-name">React</span>
+                  </li>
+                  <li class="mb-2">
+                    <span class="skill-name">Bootstrap</span>
                   </li>
                 </ul>
                 <div class="text-center mt-4">
-                  <a href="#" class="btn btn-primary">Learn More</a>
+                  <a href="#" class="btn btn-secondary">Learn More</a>
                 </div>
               </div>
             </div>
@@ -166,7 +177,58 @@
         aria-labelledby="nav-projects-tab"
         tabindex="0"
       >
-        ...
+        <div class="container my-5">
+          <div class="text-center mb-4">
+            <h2 class="myprojectsheader slide-in-up">My Projects</h2>
+          </div>
+          <div class="row">
+            <div class="col slide-in-down">
+              <div class="card">
+                <img
+                  src="DALL·E 2024-01-04 11.20.44 - An awe-inspiring image of the most powerful being imaginable, a cosmic entity that embodies the essence of strength and omnipotence. This being is dep.png"
+                  class="card-img-top"
+                  alt=""
+                />
+                <div class="card-body">
+                  <h5 class="card-title">CopyCat</h5>
+                  <p class="card-text">
+                    I was tasked with replicating discord using HTML & CSS
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col slide-in-down-other">
+              <div class="card">
+                <img
+                  src="DALL·E 2024-01-04 11.20.44 - An awe-inspiring image of the most powerful being imaginable, a cosmic entity that embodies the essence of strength and omnipotence. This being is dep.png"
+                  class="card-img-top"
+                  alt=""
+                />
+                <div class="card-body">
+                  <h5 class="card-title">CopyCat</h5>
+                  <p class="card-text">
+                    I was tasked with replicating discord using HTML & CSS
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col slide-in-down-other-other">
+              <div class="card">
+                <img
+                  src="DALL·E 2024-01-04 11.20.44 - An awe-inspiring image of the most powerful being imaginable, a cosmic entity that embodies the essence of strength and omnipotence. This being is dep.png"
+                  class="card-img-top"
+                  alt=""
+                />
+                <div class="card-body">
+                  <h5 class="card-title">CopyCat</h5>
+                  <p class="card-text">
+                    I was tasked with replicating discord using HTML & CSS
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <div
         class="tab-pane fade"
