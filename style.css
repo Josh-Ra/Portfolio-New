@@ -167,4 +167,23 @@ body {
 
 .card {
   height: 400px;
+  transition: transform 0.6s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5%);
+}
+
+.socialicon {
+  color: var(--pearlescent-color);
+  font-size: 2rem;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.bi.bi-linkedin {
+  margin-left: 1%;
+}
+
+.socialicon:hover {
+  opacity: 0.5;
 }
