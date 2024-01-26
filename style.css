@@ -164,3 +164,7 @@ body {
 .contactinfo {
   color: var(--pearlescent-color);
 }
+
+.card {
+  height: 400px;
+}
