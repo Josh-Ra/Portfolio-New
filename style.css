@@ -135,3 +135,11 @@ body {
 .card-title {
   color: var(--secondary-color);
 }
+
+.contactheader{
+  color: var(--secondary-color);
+}
+
+.contactinfo{
+  color: var(--pearlescent-color);
+}
