@@ -42,6 +42,12 @@ body {
   animation: slideInLeft 1s ease-in-out forwards;
 }
 
+.slide-in-right {
+  opacity: 0;
+  transform: translateX(100%);
+  animation: slideInRight 1s ease-in-out forwards;
+}
+
 .slide-in-down {
   opacity: 0;
   transform: translateY(100%);
@@ -70,6 +76,17 @@ body {
   from {
     opacity: 0;
     transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
   }
   to {
     opacity: 1;
@@ -113,7 +130,7 @@ body {
 
 .about-me-content {
   color: var(--pearlescent-color);
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   font-size: 20px;
 }
 
@@ -132,14 +149,18 @@ body {
   color: var(--pearlescent-color);
 }
 
+.card-text {
+  letter-spacing: 1px;
+}
+
 .card-title {
   color: var(--secondary-color);
 }
 
-.contactheader{
+.contactheader {
   color: var(--secondary-color);
 }
 
-.contactinfo{
+.contactinfo {
   color: var(--pearlescent-color);
 }
